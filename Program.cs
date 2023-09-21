@@ -9,18 +9,19 @@ Console.WriteLine("Enter a number to print first N even numbers: ");
 int number = int.Parse(Console.ReadLine());
 for(int i =1;i<number; i++)
 {
-    if (number%i==0)
+    if (number%2==0)
     {
         Console.WriteLine(i);
     }
 }
 
 // 3. program to calculate the factorial of a number entered by the user. 
+Console.WriteLine("Factorial Number");
 number = int.Parse(Console.ReadLine());
 int fact = 1;
 if (number >= 1)
 {
-    for (int i = 1; i < number; i++)
+    for (int i = 1; i <= number; i++)
     {
         fact = fact * i;
     }
@@ -54,7 +55,7 @@ for (int i = 1; i <= 100; i++)
         sum = sum + i;
     }
 }
-Console.WriteLine("Sum of fist 100 even numbers");
+Console.WriteLine("Sum of fist 100 even numbers"+ sum);
 
 // 6. print the fibonacci series
 Console.WriteLine("Enter a number to display the fibonacci series.");
